@@ -42,7 +42,6 @@ export default function Model({ scroll, ...props }) {
          <mesh name="VR_Headset" geometry={nodes.VR_Headset.geometry} material={materials.M_Headset} {...extras} />
         <mesh name="Headphones" geometry={nodes.Headphones.geometry} material={materials.M_Headphone} {...extras} />
         <mesh name="Notebook" geometry={nodes.Notebook.geometry} material={materials.M_Notebook} {...extras} />
-      
       </group>
       <group name="Camera" position={[-1.78, 2.04, 23.58]} rotation={[1.62, 0.01, 0.11]}>
         <PerspectiveCamera makeDefault far={100} near={0.1} fov={28} rotation={[-Math.PI / 2, 0, 0]}>
@@ -56,8 +55,7 @@ export default function Model({ scroll, ...props }) {
             shadow-mapSize-width={1024}
             shadow-mapSize-height={1024}
             intensity={2}
-            shadow-bias={-0.0001}
-          />
+            shadow-bias={-0.0001}/>
         </PerspectiveCamera>
       </group>
     </group>
