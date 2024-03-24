@@ -30,6 +30,15 @@ const Overlay = forwardRef(({ caption, scroll }, ref) => (
         Sua empresa merece mais do que apenas uma presença visual impactante. Na Karasu, não somos apenas especialistas em design visual; nós criamos ferramentas extremamente personalizadas e únicas para impulsionar o seu negócio. Combinamos criatividade com expertise técnica para desenvolver soluções sob medida que atendam às necessidades específicas da sua empresa. Do seu laptop à sua infraestrutura digital, estamos aqui para fornecer as ferramentas que vão levar o seu negócio ao próximo nível      </div>
     </div>
 
+      <div style={{ height: "200vh" }}>
+      <div class="dot">
+        <h1>Contatos</h1>
+        <h2>karasucorp@outlook.com</h2>
+        <h2>(11)919216813</h2>
+    </div>
+    </div>
+
+
     <span class="caption" ref={caption}>
       0.00
     </span>
