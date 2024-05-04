@@ -11,7 +11,7 @@ const color = new THREE.Color()
 
 export default function Model({ scroll, ...props }) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF("/model.glb")
+  const { nodes, materials, animations } = useGLTF("/Davi.glb")
   const { actions } = useAnimations(animations, group)
   const [hovered, set] = useState()
   const extras = { receiveShadow: true, castShadow: true, "material-envMapIntensity": 0.2 }
@@ -40,8 +40,13 @@ export default function Model({ scroll, ...props }) {
         position={[0.06, 4.04, 0.35]}
         scale={[0.25, 0.25, 0.25]}>
          <mesh name="VR_Headset" geometry={nodes.VR_Headset.geometry} material={materials.M_Headset} {...extras} />
-        <mesh name="Headphones" geometry={nodes.Headphones.geometry} material={materials.M_Headphone} {...extras} />
-        <mesh name="Notebook" geometry={nodes.Notebook.geometry} material={materials.M_Notebook} {...extras} />
+         <mesh name="Headphones" geometry={nodes.Headphones.geometry} material={materials.M_Headphone} {...extras} />
+         <mesh name="Rocket.003" geometry={nodes.Rocket.geometry} material={materials.M_Rocket} {...extras} />
+    
+
+         <mesh name="Notebook" geometry={nodes.Notebook.geometry} material={materials.M_Notebook} {...extras} />
+         <mesh name="Crow" position={[1,1,1]}  geometry={nodes.GLTF_SceneRootNode.geometry} material={materials.M_Notebook} {...extras} />
+
       </group>
       <group name="Camera" position={[-1.78, 2.04, 23.58]} rotation={[1.62, 0.01, 0.11]}>
         <PerspectiveCamera makeDefault far={100} near={0.1} fov={28} rotation={[-Math.PI / 2, 0, 0]}>
@@ -62,4 +67,4 @@ export default function Model({ scroll, ...props }) {
   )
 }
 
-useGLTF.preload("/model.glb")
+useGLTF.preload("/Davi.glb")
