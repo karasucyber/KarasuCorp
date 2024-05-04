@@ -1,0 +1,128 @@
+
+
+@font-face {
+  font-family: Lastica; 
+  src: url('../public/Lastica.ttf') format('truetype'); 
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ALL{
+  height: 100%;
+}
+
+.primary-section {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 20px; 
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #a6a6a6, #ffffff);
+  font-weight: bold; 
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.Section-in-primary img {
+  margin-left: 10px; 
+  height: 60px; 
+}
+
+.a-Corp{
+  color: red;
+  
+}
+
+.Logo1 {
+  font-size: 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Lastica, "Regular", Bold ,Helvetica, sans-serif;
+  font-stretch: expanded;
+}
+
+
+.hamburger {
+  font-size: 50px;
+  color: white;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 800px;
+  z-index: -1;
+}
+
+.content {
+  width: 100%;
+  height: 800px;
+  width: 100%;
+  padding: 20px;
+}
+.secundary-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  color: #FFFFFF;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 35px;
+  font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
+}
+
+.sectiom-in-sencundary {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 5px; 
+}
+
+.sectiom-in-sencundary > * {
+  margin-bottom: 50px; 
+}
+
+.button-secundary {
+  width: 200px;
+  height: 50px;
+  font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
+  border-radius: 5% / 50%;
+  font-size: 20px;
+  color: rgb(255, 0, 0);
+  font-weight: bold; 
+  background: linear-gradient(10deg, #ffffff);
+  letter-spacing: 2px; 
+  border: 2px solid white; 
+}
+
+.sencudary-h6{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;  
+   width: 100%;
+  height: 50px;
+}
+  
