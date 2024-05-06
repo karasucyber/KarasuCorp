@@ -5,7 +5,7 @@ import { OrbitControls } from '@react-three/drei';
 
 
 const ModelViewer = () => {
-  const gltf = useLoader(GLTFLoader, '/scene.gltf');
+  const gltf = useLoader(GLTFLoader, 'karasu/public/mac/mac.gltf');
   const group: any = useRef();
 
   return (
