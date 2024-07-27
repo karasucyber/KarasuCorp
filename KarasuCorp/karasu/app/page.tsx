@@ -19,7 +19,7 @@ export default function Home() {
             <GiHamburgerMenu />
           </div>
           <div className="logo-section">
-            <a className="Logo1" data-aos="fade-left">KARASU<a className="a-Corp" data-aos="fade-left">CORP</a></a>
+            <a className="Logo1" data-aos="fade-left">KARASU</a><p className="a-Corp" data-aos="fade-left">CORP</p>
             <div className="Section-in-primary">
               <img src="karasu.png" data-aos="fade-up" alt="Karasu Logo" />
             </div>

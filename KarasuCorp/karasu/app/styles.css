@@ -44,7 +44,10 @@ body {
 
 .a-Corp {
   color: red;
-
+  font-size: 30px;
+  text-decoration: none;
+  font-stretch: expanded;
+  font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
 }
 
 .Logo1 {
