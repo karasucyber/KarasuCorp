@@ -44,7 +44,7 @@ export default function Home() {
         <div className='three-section-right'>
            <h1> Quem somos</h1>
            <div className='Container-Mac'> 
-            <Mac></Mac>
+            <Mac>
            </div>
            
         </div>
