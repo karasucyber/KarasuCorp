@@ -4,7 +4,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles.css'; 
-import Mac from './mac';
+import Mac from './Componentes/mac';
+import ScrollIm from "./Componentes/Scroll/Scroll";
 
 export default function Home() {
   useEffect(() => {
@@ -55,6 +56,12 @@ export default function Home() {
 
         </div>
       </div>
+
+      <div className="five-section" >
+        <ScrollIm></ScrollIm>
+
+ 
+        </div>
     </main>
   );
 }

@@ -172,3 +172,12 @@ body {
   width: 100%;
   height: 100%;
 }
+
+.five-section {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(90deg, #a6a6a6, #ffffff);
+  display: flex;
+
+}
+
