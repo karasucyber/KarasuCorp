@@ -39,8 +39,8 @@ export function useScroll() {
 export function ScrollControls({
   eps = 0.00001,
   enabled = true,
-  infinite,
-  horizontal,
+  infinite = true,
+  horizontal = false,
   pages = 1,
   distance = 1,
   damping = 4,
@@ -52,6 +52,9 @@ export function ScrollControls({
   const [fixed] = React.useState(() => document.createElement('div'))
   const target = gl.domElement.parentNode!
   const scroll = React.useRef(0)
+
+  // Fator de desaceleração
+  const scrollSpeedFactor = 0.5; // Ajuste esse valor para reduzir ou aumentar a velocidade do scroll
 
   const state = React.useMemo(() => {
     return {
@@ -111,7 +114,6 @@ export function ScrollControls({
 
     return () => {
       target.removeChild(el)
-      events.connect?.(oldTarget)
     }
   }, [pages, distance, horizontal, el, fill, fixed, target, events, gl.domElement])
 
@@ -128,7 +130,7 @@ export function ScrollControls({
       if (!enabled || firstRun) return
       invalidate()
       current = el[horizontal ? 'scrollLeft' : 'scrollTop']
-      scroll.current = current / scrollThreshold
+      scroll.current = (current / scrollThreshold) * scrollSpeedFactor; // Aplica o fator de desaceleração
       if (infinite) {
         if (!disableScroll) {
           if (scroll.current >= 1 - 0.001) {
@@ -149,7 +151,7 @@ export function ScrollControls({
     el.addEventListener('scroll', onScroll, { passive: true })
     requestAnimationFrame(() => (firstRun = false))
 
-    const onWheel = (e: WheelEvent) => (el.scrollLeft += e.deltaY / 2)
+    const onWheel = (e: WheelEvent) => (el.scrollLeft += e.deltaY / 2 * scrollSpeedFactor) // Aplica o fator de desaceleração
     if (horizontal) el.addEventListener('wheel', onWheel, { passive: true })
 
     return () => {
@@ -160,6 +162,7 @@ export function ScrollControls({
 
   let last = 0
   useFrame((_, delta) => {
+    // Aplica a suavização e a desaceleração
     state.offset = THREE.MathUtils.damp((last = state.offset), scroll.current, damping, delta)
     state.delta = THREE.MathUtils.damp(state.delta, Math.abs(last - state.offset), damping, delta)
     if (state.delta > eps) invalidate()
