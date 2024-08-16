@@ -20,7 +20,8 @@
     "react-dom": "^18",
     "react-icons": "^5.2.0",
     "three": "^0.164.1",
-    "three-stdlib": "^2.29.11"
+    "three-stdlib": "^2.29.11",
+    "valtio": "^1.13.2"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
