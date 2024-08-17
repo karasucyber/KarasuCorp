@@ -57,11 +57,56 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="five-section" >
-       <Scroll2></Scroll2>
+      <div className="four-section">
+  <h1>Nossos Serviços</h1><ol>
+    <li>
+      <div className="icon"><i className="fa-solid fa-bicycle"></i></div>
+      <a>-</a>
+      <div className="title">Desenvolvimento de Websites</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-car"></i></div>
+      <a>-</a>
+      <div className="title">E-commerce</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-helicopter"></i></div>
+      <a>-</a>
+      <div className="title">Marketing Digital</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-plane"></i></div>
+      <a>-</a>
+      <div className="title">Gestão de Tráfego Pago</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-rocket"></i></div>
+      <a>-</a>
+      <div className="title">Dashboards Interativos</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-bus"></i></div>
+      <a>-</a>
+      <div className="title">Softwares Personalizados</div>
+    </li>
+    <li>
+      <div className="icon"><i className="fa-solid fa-bus"></i></div>
+      <a>-</a>
+      <div className="title">ERP & MVM</div>
+    </li>
+  </ol>
+</div>
 
- 
-        </div>
+
+      <div className="five-section">
+       <Scroll2></Scroll2>
+      </div>
+
+
+      <div className='Six-section'>
+        
+
+      </div>
     </main>
   );
 }

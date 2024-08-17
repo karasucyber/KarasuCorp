@@ -75,9 +75,11 @@ function Items({ w = 0.7, gap = 0.15 }) {
 }
 
 export const Scroll2 = () => (
+  <> 
   <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} onPointerMissed={() => (state.clicked = null)}>
-    <Items />
-  </Canvas>
+  <Items />
+</Canvas>
+</>
 )
 
 export default Scroll2;
