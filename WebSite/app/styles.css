@@ -291,10 +291,35 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 }
 
 
-.container-wave{
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  
+.Whats-Box{
+  background: #4dc247;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 38px;
+  position: fixed;
+  bottom: 66px;
+  right: 20px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,.4);
+  z-index: 9999;
+}
+
+.Insta-Box {
+  background: linear-gradient(45deg, #833ab4, #fd1d1d, #fcb045);
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 38px;
+  position: fixed;
+  bottom: 1px;
+  right: 20px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  align-items: center;
 }

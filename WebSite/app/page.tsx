@@ -5,10 +5,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles.css';
 import Mac from './Componentes/mac';
-import Scroll2 from './App';
 import Link from 'next/link';
-import WaveRectangle from './wave';
-import Scroll3 from './scroll';
+import { FaWhatsapp } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+
 
 
 
@@ -110,7 +110,18 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    
+      <a href="https://www.instagram.com/karasu_corp" target="_blank" rel="noopener noreferrer">
+  <div className="Insta-Box">
+    <FaInstagram style={{ width: "90%", height: "90%" }} />
+  </div>
+</a>
+
+<a href="https://wa.me/011919216813" target="_blank" rel="noopener noreferrer">
+  <div className="Whats-Box">
+    <FaWhatsapp style={{ width: "100%", height: "100%" }} />
+  </div>
+</a>
+
     </main>
     
   );
