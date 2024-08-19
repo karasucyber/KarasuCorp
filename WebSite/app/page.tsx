@@ -8,6 +8,7 @@ import Mac from './Componentes/mac';
 import Link from 'next/link';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import Scroll2 from './App';
 
 export default function Home() {
   useEffect(() => {
@@ -25,12 +26,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main>
-      {loading && (
-        <div id="loader">
-          <div className="spinner"></div>
-        </div>
-      )}
+    <main className='Main'>
+        {loading && (
+          <div id="loader">
+            <div className="spinner"></div>
+          </div>
+        )}
       <div className={loading ? 'hidden' : ''}>
         <div className="primary-section" data-aos="fade-up">
           <div className="hamburger" data-aos="fade-left">
@@ -133,6 +134,7 @@ export default function Home() {
           </div>
         </a>
       </div>
+
     </main>
   );
 }
