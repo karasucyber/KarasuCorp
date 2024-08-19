@@ -12,7 +12,7 @@ const ModelViewer = () => {
 
     <>
       <group ref={group}>
-        <primitive object={gltf.scene} position={[0, -1 , 0]} scale={[5, 5, 5]} />
+        <primitive object={gltf.scene} position={[0, -1 , 0]} scale={[7, 7, 7]} />
       </group>
     </>
 

@@ -7,6 +7,8 @@ import './styles.css';
 import Mac from './Componentes/mac';
 import Scroll2 from './App';
 import Link from 'next/link';
+import WaveRectangle from './wave';
+import Scroll3 from './scroll';
 
 
 
@@ -101,18 +103,16 @@ export default function Home() {
           </li>
         </ol>
 
-        <div className=''>
+        <div className='six-section'>
           <h1>Gostaria de ver nossos projetos?</h1>
           <Link href="/Projetos" passHref>
             <button className="button-secundary">Projetos</button>
           </Link>
         </div>
-
       </div>
-
-
-
+    
     </main>
+    
   );
 }
 

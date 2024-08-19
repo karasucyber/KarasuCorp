@@ -96,6 +96,7 @@ body {
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
 }
 
+
 .sectiom-in-sencundary {
   width: 50%;
   display: flex;
@@ -278,7 +279,22 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   background: linear-gradient(90deg, #a6a6a6, #ffffff);
   overflow: hidden; /* Oculta as barras de rolagem */
   overscroll-behavior: none;
+} 
+
+.six-section{
+  margin: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+
 }
 
 
-
+.container-wave{
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+}
