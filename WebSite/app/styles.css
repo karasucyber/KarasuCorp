@@ -374,6 +374,8 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   z-index: 9999;
   align-items: center;
 }
+
+
 .Palavras_Chaves{
   color: red;
 }
@@ -403,4 +405,8 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
 }
