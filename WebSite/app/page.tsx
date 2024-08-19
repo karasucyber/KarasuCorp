@@ -18,8 +18,20 @@ export default function Home() {
     AOS.init();
   }, []);
 
+   addEventListener('load', function() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+      loader.style.display = 'none';
+    }
+  });
+  
+
   return (
+    
     <main className="">
+      <div id="loader">
+  <div className="spinner"></div>
+</div>
       <div >
         <div className="primary-section" data-aos="fade-up" >
           <div className="hamburger" data-aos="fade-left">
@@ -47,19 +59,24 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='three-section'>
-        <div className='three-section-right'>
-          <h1> Quem somos</h1>
-          <div className='Container-Mac'>
-            <Mac />
-          </div>
+      <div className="three-section">
+  <div className="three-section-right">
+    <h1>Quem somos</h1>
+    <div className="Container-Mac">
+      <Mac />
+    </div>
+  </div>
 
-        </div>
-
-        <div className='three-section-left'>
-          <h1> teste</h1>
-        </div>
-      </div>
+  <div className="three-section-left">
+  <div className="typing-text">
+    Somos uma <a className="Palavras_Chaves">startup de tecnologia e inovação</a> que acredita na harmonia entre o clássico e o moderno. Nossa essência é trazer soluções inovadoras sem perder o bom e velho toque old school que tanto valorizamos. Com uma cultura que honra o passado e abraça o futuro, integramos <a className="Palavras_Chaves">inteligência artificial</a> em seus sistemas <a className="Palavras_Chaves">ERP</a> para otimizar processos e melhorar a tomada de decisões.
+  </div>
+  <br />
+  <div className="typing-text">
+    Além disso, ajudamos você a vender mais, criando <a className="Palavras_Chaves">sites robustos e eficientes</a>, projetados para atender às demandas do mercado atual. Nosso objetivo é ser um <a className="Palavras_Chaves">parceiro estratégico</a>, fornecendo as ferramentas que você precisa para alcançar o sucesso em um mundo em constante mudança.
+  </div>
+</div>
+</div>
 
       <div className="four-section">
         <h1>Nossos Serviços</h1><ol>
@@ -81,7 +98,7 @@ export default function Home() {
           <li>
             <div className="icon"><i className="fa-solid fa-plane"></i></div>
             <a>-</a>
-            <div className="title">Gestão de Tráfego</div>
+            <div className="title">Gerenciamneto de Tráfego</div>
           </li>
           <li>
             <div className="icon"><i className="fa-solid fa-rocket"></i></div>
@@ -99,7 +116,7 @@ export default function Home() {
           <li>
             <div className="icon"><i className="fa-solid fa-bus"></i></div>
             <a>-</a>
-            <div className="title">ERP & MVM</div>
+            <div className="title">Designer</div>
           </li>
         </ol>
 
@@ -112,7 +129,7 @@ export default function Home() {
       </div>
       <a href="https://www.instagram.com/karasu_corp" target="_blank" rel="noopener noreferrer">
   <div className="Insta-Box">
-    <FaInstagram style={{ width: "90%", height: "90%" }} />
+    <FaInstagram style={{ width: "80%", height: "100%" }} />
   </div>
 </a>
 
