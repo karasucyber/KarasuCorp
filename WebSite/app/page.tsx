@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Scroll2 from './App';
+import Waves from './waves';
 
 export default function Home() {
   useEffect(() => {
@@ -32,6 +33,7 @@ export default function Home() {
             <div className="spinner"></div>
           </div>
         )}
+        
       <div className={loading ? 'hidden' : ''}>
         <div className="primary-section" data-aos="fade-up">
           <div className="hamburger" data-aos="fade-left">
@@ -77,7 +79,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="four-section">
+        <div className="four-section" >
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+        <Waves />
+      </div>
           <h1>Nossos Serviços</h1>
           <ol>
             <li>
@@ -134,6 +139,8 @@ export default function Home() {
           </div>
         </a>
       </div>
+
+      
 
     </main>
   );

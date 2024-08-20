@@ -21,6 +21,6 @@
         "@/*": ["./*"]
       }
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/scroll.js"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/scroll.js", "app/waves.jsx"],
     "exclude": ["node_modules"]
   }
