@@ -10,6 +10,20 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Scroll2 from './App';
 import Waves from './waves';
+import { CgWebsite } from "react-icons/cg";
+import { CiShoppingCart } from "react-icons/ci";
+import { GrNetwork } from "react-icons/gr";
+import { MdPaid } from "react-icons/md";
+import { MdInsights } from "react-icons/md";
+import { FaLaptopCode } from "react-icons/fa";
+import { IoMdPhotos } from "react-icons/io";
+
+
+
+
+
+
+
 
 export default function Home() {
   useEffect(() => {
@@ -83,44 +97,105 @@ export default function Home() {
         <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
         <Waves />
       </div>
-          <h1>Nossos Serviços</h1>
-          <ol>
-            <li>
-              <div className="icon"><i className="fa-solid fa-bicycle"></i></div>
-              <a>-</a>
-              <div className="title">Websites</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-car"></i></div>
-              <a>-</a>
-              <div className="title">E-commerce</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-helicopter"></i></div>
-              <a>-</a>
-              <div className="title">Marketing Digital</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-plane"></i></div>
-              <a>-</a>
-              <div className="title">Gerenciamento de Tráfego</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-rocket"></i></div>
-              <a>-</a>
-              <div className="title">Dashboards Interativos</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-bus"></i></div>
-              <a>-</a>
-              <div className="title">Softwares Personalizados</div>
-            </li>
-            <li>
-              <div className="icon"><i className="fa-solid fa-bus"></i></div>
-              <a>-</a>
-              <div className="title">Designer</div>
-            </li>
-          </ol>
+      <div className="four-section">
+          
+          <div className="">
+          <div className="parent">
+            
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title"> Web Site</span>
+      <p className="card-content">
+        Sites modernos para destacar sua presença online.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><CgWebsite style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+  
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Ecommerce</span>
+      <p className="card-content">
+        Lojas online completas para gerenciar seus produtos.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><CiShoppingCart  style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Marketing</span>
+      <p className="card-content">
+        Estratégias para aumentar sua visibilidade online.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><GrNetwork style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Tráfego Pago</span>
+      <p className="card-content">
+        Anúncios pagos para atrair mais clientes e leads.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><MdPaid style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Dashboards</span>
+      <p className="card-content">
+        Dashboards para análise e visualização de dados.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><MdInsights style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Softwares</span>
+      <p className="card-content">
+        Software feito sob medida para suas necessidades.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><FaLaptopCode  style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+
+  <div className="card">
+    <div className="content-box">
+      <span className="card-title">Designer</span>
+      <p className="card-content">
+        Design criativo para melhorar seus projetos visuais.
+      </p>
+      <span className="see-more">Saber Mais</span>
+    </div>
+    <div className="date-box">
+      <span className="month"><IoMdPhotos style={{width:"40px", height:"40px"}} /></span>
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
           <div className='six-section'>
             <h1>Gostaria de ver nossos projetos?</h1>
             <Link href="/Projetos" passHref>
