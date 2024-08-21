@@ -8,8 +8,7 @@ import Mac from './Componentes/mac';
 import Link from 'next/link';
 import { FaFileAlt, FaWallet, FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Scroll2 from './App';
-import Waves from './waves';
+import Waves from './Componentes/waves';
 import { CgWebsite } from "react-icons/cg";
 import { CiShoppingCart } from "react-icons/ci";
 import { GrNetwork } from "react-icons/gr";
@@ -17,13 +16,8 @@ import { MdPaid } from "react-icons/md";
 import { MdInsights } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoMdPhotos } from "react-icons/io";
-import { div } from 'three/examples/jsm/nodes/Nodes.js';
-
-
-
-
-
-
+import Navbar from './Componentes/navbar';
+import Loading from './Componentes/Loading';
 
 
 export default function Home() {
@@ -41,255 +35,15 @@ export default function Home() {
     return () => clearTimeout(timer); // Limpeza do timer
   }, []);
 
-
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    // Cleanup listener on component unmount
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <main className='Main'>
       {loading && (
-
-        <div className='LoadingC'>
-          <div id="loading" className="socket">
-            <div className="gel center-gel">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c1 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c2 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c3 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c4 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c5 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c6 r1">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-
-            <div className="gel c7 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-
-            <div className="gel c8 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c9 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c10 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c11 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c12 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c13 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c14 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c15 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c16 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c17 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c18 r2">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c19 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c20 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c21 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c22 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c23 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c24 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c25 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c26 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c28 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c29 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c30 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c31 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c32 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c33 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c34 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c35 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c36 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-            <div className="gel c37 r3">
-              <div className="hex-brick h1"></div>
-              <div className="hex-brick h2"></div>
-              <div className="hex-brick h3"></div>
-            </div>
-
-          </div>
-
-        </div>
-
+        <Loading/>
       )}
 
       <div className={loading ? 'hidden' : ''}>
-      <div className={`primary-section ${scrolled ? 'scrolled' : ''}`} data-aos="fade-up">
-          <div  className="wrapper">
-            <input type="checkbox" />
-            <div className="fab"></div>
-            <div className="fac">
-  <a href="/Projeto" className="icon-wrapper">
-    <GrNetwork />
-    <span className="tooltip">Network</span>
-  </a>
-  <a href="#" className="icon-wrapper">
-    <FaFileAlt />
-    <span className="tooltip">File</span>
-  </a>
-  <a href="#" className="icon-wrapper">
-    <FaWallet />
-    <span className="tooltip">Wallet</span>
-  </a>
-</div>
-          </div>
-
-
-          <div className="logo-section">
-            <a className="Logo1" data-aos="fade-left">KARASU</a>
-            <p className="a-Corp" data-aos="fade-left">CORP</p>
-            <div className="Section-in-primary">
-              <img src="karasu.png" data-aos="fade-up" alt="Karasu Logo" />
-            </div>
-          </div>
-          <img />
-        </div>
+        <Navbar/>
+    
         <div className="secundary-section" data-aos="fade-up" data-aos-delay="0">
           <div className="sectiom-in-sencundary">
             <h1 data-aos="fade-right" data-aos-delay="0">Construindo Legados Digitais</h1>

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import * as THREE from 'three';
-import './styles.css';
+import '../styles.css';
 
 const ParticleWaves = () => {
     const pointsRef = useRef();
