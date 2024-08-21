@@ -19,14 +19,17 @@ const Navbar = () => {
             <input type="checkbox" />
             <div className="fab"><RxHamburgerMenu/></div>
             <div className="fac">
+
               <a href="/" className="icon-wrapper">
                 <FaHouse />
                 <span className="tooltip">Home</span>
               </a>
-              <a href="#" className="icon-wrapper">
+
+              <a href="/History" className="icon-wrapper">
                 <MdOutlineMenuBook />
                 <span className="tooltip">História</span>
               </a>
+
               <a href="/Projetos" className="icon-wrapper">
                 <MdHomeRepairService />
                 <span className="tooltip">Serviços</span>
@@ -46,12 +49,6 @@ const Navbar = () => {
                 <TfiHeadphoneAlt />
                 <span className="tooltip">Sac</span>
               </a>
-
-              <a href="#" className="icon-wrapper">
-                <FaWallet />
-                <span className="tooltip">Cashback</span>
-              </a>
-
             </div>
           </div>
 

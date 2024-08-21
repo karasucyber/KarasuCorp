@@ -1,14 +1,20 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import '../styles.css';
-import Scroll2 from "../Componentes/App";
+'use client'
+import AOS from 'aos';
+import Navbar from '../Componentes/navbar';
 import Waves from "../Componentes/waves";
 import Loading from "../Componentes/Loading";
-import Navbar from "../Componentes/navbar";
+import React, { useEffect, useState } from "react";
+import Scroll2 from "../Componentes/App";
+import '../styles.css';
 
 
 
-export default function Page() {
+
+export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -20,21 +26,23 @@ export default function Page() {
   }, []);
 
   return (
-    <>
+    <main className='Main'>
       {loading && (
-      <Loading/>
+        <Loading/>
       )}
 
-         <Navbar/>
-       
-        <div className="five-section">
-          <Scroll2 />
-        </div>
+      <div className={loading ? 'hidden' : ''}>
+        <Navbar/>
 
-        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -998 }}>
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1000 }}>
         <Waves />
       </div>
-    </>
+    
+      <div className="five-section">
+          <Scroll2/>
+        </div>
+       
+      </div>
+    </main>
   );
 }
-
