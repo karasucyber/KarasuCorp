@@ -178,6 +178,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                     <span className="card-title">Designer</span>
+                    <br></br>
                     <p className="card-content">
                       Design criativo para seus projetos visuais.
                     </p>
