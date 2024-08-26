@@ -17,59 +17,69 @@ const Footer = () => {
     <div className="footer__columns">
       <div className="footer__col">
         <h3 className="footer__col-title">
-          <i data-feather="shopping-bag"></i> <span>La boutique</span></h3>
+          <i data-feather="shopping-bag"></i> <span>Serviços</span></h3>
         <nav className="footer__nav">
-          <ul className="footer__nav-list">
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
-                Mentions légales
+          <ul className="footer__nav-divst">
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+                WebSite
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
-                Politique de confidentialité
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+                E-commerce
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
-                CGV
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+                Marketing
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
-                Livraisons et retours
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+                Tráfego Pago
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
-                Règlement concours
-              </a>
-            </li>
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+               Dashboards
+               </a>
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+               Softwares
+               </a>
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
+               Designers
+               </a>
+            </div>
           </ul>
         </nav>
       </div>
       <div className="footer__col">
         <h3 className="footer__col-title">
-          <i data-feather="share-2"></i> <span>Nos réseaux</span></h3>
+          <i data-feather="share-2"></i> <span>Redes Socias</span></h3>
         <nav className="footer__nav">
-          <ul className="footer__nav-list">
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
+          <ul className="footer__nav-divst">
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
                 <i data-feather="youtube"></i><span>Youtube</span>
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
                 <i data-feather="facebook"></i><span>Facebook</span>
                 
               </a>
-            </li>
-            <li className="footer__nav-item">
-              <a href="" className="footer__nav-link">
+            </div>
+            <div className="footer__nav-item">
+              <a href="" className="footer__nav-divnk">
                 <i data-feather="instagram"></i><span>Instagram</span>
                 
               </a>
-            </li>
+            </div>
           </ul>
         </nav>
       </div>
@@ -77,18 +87,19 @@ const Footer = () => {
         <h3 className="footer__col-title">
           <i data-feather="send"></i> <span>Contact</span></h3>
         <nav className="footer__nav">
-          <ul className="footer__nav-list">
-            <li className="footer__nav-item">
-              <a href="mailto:contact.laboiserie@gmail.com" className="footer__nav-link">
-                contact.laboiserie@gmail.com
-              </a>
-            </li>
+          <ul className="footer__nav-divst">
+            <div className="footer__nav-item">
+              <div  className="footer__nav-divnk">
+                <a>Comercial</a>
+                <a>Sac</a>
+              </div>
+            </div>
           </ul>
         </nav>
       </div>
     </div>
       <div className="footer__copyrights">
-        <p>Réalisé par <a href="https://twitter.com/silvereledev" target="_blank">@SilvereLeDev</a></p>
+        <p>Direitos reservados <a href="https://twitter.com/silvereledev" target="_blank">Karasucorp</a></p>
       </div>
   </div>
 </footer>

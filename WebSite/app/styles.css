@@ -1201,19 +1201,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
     animation: parralax 600s linear infinite;
   }
   
-  .footer__parralax-moto {
-    position: absolute;
-    bottom: px;
-    left: 50%;
-    margin-left: -250px;
-    height: 200px;
-    width: 200px;
-    background: url("../public/crow3.gif");
-    background-repeat: no-repeat;
-    transform-origin: 50% 80%;
-    animation: moto 5s linear infinite;
-  }
-  
+
   .footer__parralax-voiture {
     position: absolute;
     bottom: 10px;
@@ -1271,6 +1259,10 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   .three-section-left {
     width: 100%;
     padding: 20px;
+    gap: 20px;
+    z-index: -0;
+    font-size: 14px;
+
   }
 }
 
@@ -1280,4 +1272,13 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
     padding: 10px;
     font-size: 14px;
   }
+}
+
+@media (max-width : 768px) {
+  .secundary-section{
+    font-size: 17px;
+    text-align: center;
+    
+  }
+  
 }

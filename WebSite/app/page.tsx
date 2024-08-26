@@ -47,10 +47,11 @@ export default function Home() {
     
         <div className="secundary-section" data-aos="fade-up" data-aos-delay="0">
           <div className="sectiom-in-sencundary">
-            <h1 data-aos="fade-right" data-aos-delay="0">Construindo Legados Digitais</h1>
+            <h1 data-aos="fade-right" data-aos-delay="5">Construindo Legados Digitais</h1>
             <div className="sencudary-h6">
-              <h6 data-aos="fade-right" data-aos-delay="0">Construindo pontes entre passado e</h6>
-              <h6 data-aos="fade-right" data-aos-delay="0">futuro digital</h6>
+              <h6 data-aos="fade-right" data-aos-delay="5">Construindo pontes entre passado </h6>
+              <h6 data-aos="fade-right" data-aos-delay="5">e</h6>
+              <h6 data-aos="fade-right" data-aos-delay="5">futuro digital</h6>
             </div>
             <button className="button-secundary" data-aos="fade-right">Construa</button>
           </div>
@@ -178,7 +179,7 @@ export default function Home() {
                   <div className="content-box">
                     <span className="card-title">Designer</span>
                     <p className="card-content">
-                      Design criativo para melhorar seus projetos visuais.
+                      Design criativo para seus projetos visuais.
                     </p>
                     <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
                        Saber Mais                
