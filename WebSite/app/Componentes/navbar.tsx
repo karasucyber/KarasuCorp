@@ -30,22 +30,29 @@ const Navbar = () => {
                 <span className="tooltip">História</span>
               </a>
 
-              <a href="/Projetos" className="icon-wrapper">
+              <a href="/" className="icon-wrapper">
                 <MdHomeRepairService />
                 <span className="tooltip">Serviços</span>
               </a>
 
-              <a href="#" className="icon-wrapper">
+              <a href="/Contact" className="icon-wrapper">
                 <FaPhoneAlt />
                 <span className="tooltip">Contatos</span>
               </a>
 
-              <a href="#" className="icon-wrapper">
+              <a href="/Projetos" className="icon-wrapper">
                 <RiSlideshowFill />
                 <span className="tooltip">Portifólio</span>
               </a>
 
-              <a href="#" className="icon-wrapper">
+
+              <a href="/ProjetoSocial" className="icon-wrapper">
+                <TfiHeadphoneAlt />
+                <span className="tooltip">Projeto Social</span>
+              </a>
+              
+
+              <a href="/Sac" className="icon-wrapper">
                 <TfiHeadphoneAlt />
                 <span className="tooltip">Sac</span>
               </a>

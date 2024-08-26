@@ -4,8 +4,9 @@ import { GLTFLoader } from 'three-stdlib';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
 
+
 const ModelViewer = () => {
-  const gltf = useLoader(GLTFLoader, '/scene.gltf');
+  const gltf = useLoader(GLTFLoader, '/BoyUniverse.gltf');
   const group = useRef<THREE.Group>(null);
 
   // Adiciona a rotação lenta ao modelo

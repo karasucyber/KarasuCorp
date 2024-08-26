@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import Navbar from '../Componentes/navbar';
 import Loading from '../Componentes/Loading';
+import Footer from '../Componentes/footer';
 
 
 export default function Home() {
@@ -28,6 +29,8 @@ export default function Home() {
 
       <div className={loading ? 'hidden' : ''}>
         <Navbar/>
+
+        <Footer/>
     
        
       </div>

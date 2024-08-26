@@ -18,6 +18,7 @@ import { FaLaptopCode } from "react-icons/fa";
 import { IoMdPhotos } from "react-icons/io";
 import Navbar from './Componentes/navbar';
 import Loading from './Componentes/Loading';
+import Footer from './Componentes/footer';
 
 
 export default function Home() {
@@ -56,7 +57,7 @@ export default function Home() {
         </div>
         <div className="three-section">
           <div className="three-section-right">
-            <h1>Quem somos</h1>
+            <h1>Quem somos ?</h1>
             <div className="Container-Mac">
               <Mac />
             </div>
@@ -79,7 +80,7 @@ export default function Home() {
           <div className="four-section">
 
             <div className="">
-              <div className="parent">
+              <div id="Service" className="parent">
 
                 <div className="card">
                   <div className="content-box">
@@ -87,7 +88,11 @@ export default function Home() {
                     <p className="card-content">
                       Sites modernos para destacar sua presença online.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more">
+                    <Link style={{textDecoration:"none", color:"black"}} href="/WebSite">
+                            Saber Mais  
+                     </Link>
+                    </span>
                   </div>
                   <div className="date-box">
                     <span className="month"><CgWebsite style={{ width: "40px", height: "40px" }} /></span>
@@ -100,7 +105,9 @@ export default function Home() {
                     <p className="card-content">
                       Lojas online completas para gerenciar seus produtos.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Ecommerce">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><CiShoppingCart style={{ width: "40px", height: "40px" }} /></span>
@@ -113,7 +120,9 @@ export default function Home() {
                     <p className="card-content">
                       Estratégias para aumentar sua visibilidade online.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Marketing">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><GrNetwork style={{ width: "40px", height: "40px" }} /></span>
@@ -126,7 +135,9 @@ export default function Home() {
                     <p className="card-content">
                       Anúncios pagos para atrair mais clientes e leads.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Tráfego Pago">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><MdPaid style={{ width: "40px", height: "40px" }} /></span>
@@ -139,7 +150,9 @@ export default function Home() {
                     <p className="card-content">
                       Dashboards para análise e visualização de dados.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><MdInsights style={{ width: "40px", height: "40px" }} /></span>
@@ -152,7 +165,9 @@ export default function Home() {
                     <p className="card-content">
                       Software feito sob medida para suas necessidades.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><FaLaptopCode style={{ width: "40px", height: "40px" }} /></span>
@@ -165,7 +180,9 @@ export default function Home() {
                     <p className="card-content">
                       Design criativo para melhorar seus projetos visuais.
                     </p>
-                    <span className="see-more">Saber Mais</span>
+                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
+                       Saber Mais                
+                     </Link></span>
                   </div>
                   <div className="date-box">
                     <span className="month"><IoMdPhotos style={{ width: "40px", height: "40px" }} /></span>
@@ -193,6 +210,8 @@ export default function Home() {
           </div>
         </a>
       </div>
+
+      <Footer></Footer>
 
 
 

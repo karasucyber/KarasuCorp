@@ -53,6 +53,8 @@ body {
 
 
 
+
+
 .logo-section {
   display: flex;
   align-items: center;
@@ -93,13 +95,15 @@ body {
 }
 
 
+
 .sectiom-in-sencundary {
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   letter-spacing: 5px;
+  gap: 50px;
 }
 
 .sectiom-in-sencundary>* {
@@ -109,7 +113,7 @@ body {
 .button-secundary {
   width: 200px;
   height: 50px;
-  font-family: 'Lastica', 'Regular', 'Bold', Helvetica, sans-serif;
+  font-family: 'Lastica', 'Regula@r', 'Bold', Helvetica, sans-serif;
   border-radius: 5% / 50%;
   font-size: 20px;
   color: rgb(255, 0, 0);
@@ -202,25 +206,7 @@ body {
 
 
 /* Responsividade */
-@media (max-width: 768px) {
-  .three-section {
-    flex-direction: column;
-  }
 
-  .three-section-right,
-  .three-section-left {
-    width: 100%;
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .three-section-right,
-  .three-section-left {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
   
 
 .Container-Mac{
@@ -436,13 +422,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   flex-wrap: wrap; /* Permite que os itens sejam movidos para a linha seguinte se não houver espaço suficiente */
 }
 
-/* Media Query para telas menores */
-@media (max-width: 768px) {
-  .parent {
-    flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
-    gap: 20px; /* Espaçamento entre os cards */
-  }
-}
+
 
 .card {
   height: 10px;
@@ -1065,3 +1045,239 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
       transform: scale(1, 1);
     }
   }
+
+
+  
+
+
+
+
+
+
+
+
+  
+  /* Footer styles */
+  .container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  
+  .footer {
+    position: relative;
+    margin-top: 300px;
+    top: 250px;
+    padding: 3rem 0;
+    color: #fff;
+    background: #000;
+    margin-top: auto;
+  }
+  
+  .footer__columns {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  
+  .footer__col-title {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer__col-title * ~ span {
+    margin-left: 1rem;
+  }
+  
+  .footer a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a * ~ span {
+    margin-left: 1rem;
+  }
+  
+  .footer__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .footer__copyrights {
+    padding-top: 3rem;
+    margin-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .footer__copyrights p {
+    display: flex;
+  }
+  
+  .footer__copyrights a {
+    margin-left: 0.5rem;
+  }
+  
+  @keyframes parralax {
+    0% {
+      background-position: 260px;
+    }
+    100% {
+      background-position: -10000vw;
+    }
+  }
+  
+  @keyframes moto {
+    0% {
+      transform: translateY(0) rotate(0);
+    }
+    5% {
+      transform: translateY(0) rotate(-5deg);
+    }
+    25% {
+      transform: translateY(60px) rotate(-20deg);
+    }
+    49% {
+      transform: translateY(0) rotate(-1deg);
+    }
+    51% {
+      transform: translateY(0) rotate(1deg);
+    }
+    75% {
+      transform: translateY(60px) rotate(20deg);
+    }
+    80% {
+      transform: translateY(60px) rotate(0deg);
+    }
+    98% {
+      transform: translateY(0) rotate(0);
+    }
+  }
+  
+  @keyframes voiture {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
+  }
+  
+  .footer__parralax {
+    position: absolute;
+    left: 0;
+    top: -300px;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .footer__parralax-premierplan {
+    background-position: 260px;
+  }
+  
+  .footer__parralax-trees,
+  .footer__parralax-premierplan,
+  .footer__parralax-secondplan {
+    position: absolute;
+    inset: 0;
+    background-repeat: repeat-x;
+    background-position-y: 100% !important;
+    animation: parralax 600s linear infinite;
+  }
+  
+  .footer__parralax-moto {
+    position: absolute;
+    bottom: px;
+    left: 50%;
+    margin-left: -250px;
+    height: 200px;
+    width: 200px;
+    background: url("../public/crow3.gif");
+    background-repeat: no-repeat;
+    transform-origin: 50% 80%;
+    animation: moto 5s linear infinite;
+  }
+  
+  .footer__parralax-voiture {
+    position: absolute;
+    bottom: 10px;
+    left: 10%;
+    margin-left: 250px;
+    height: 114px;
+    width: 206px;
+    background: url(https://i.ibb.co/0Qhp4DN/voiture-fumee.gif);
+    background-repeat: no-repeat;
+    animation: voiture 1s linear infinite;
+  }
+  
+  .footer__parralax-trees {
+    background-image: url(https://i.ibb.co/nQM4PGJ/arbres.png);
+    bottom: -60px;
+    animation-duration: 1000s;
+  }
+  
+  .footer__parralax-premierplan {
+    background-image: url(https://i.ibb.co/RQhDWbk/premierplanv3.png);
+    animation-duration: 500s;
+  }
+  
+  .footer__parralax-secondplan {
+    background-image: url(https://i.ibb.co/J3TjC4W/second-plan.png);
+    animation-duration: 600s;
+  }
+  
+
+
+
+  @media (max-width: 768px) {
+    .footer__columns  {
+      flex-direction: column; 
+      gap: 100px; 
+      align-items: center;
+      
+    }
+  }
+
+  /* Media Query para telas menores */
+@media (max-width: 768px) {
+  .parent {
+    flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
+    gap: 20px; /* Espaçamento entre os cards */
+  }
+}
+
+@media (max-width: 768px) {
+  .three-section {
+    flex-direction: column;
+  }
+
+  .three-section-right,
+  .three-section-left {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .three-section-right,
+  .three-section-left {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
