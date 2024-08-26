@@ -10,6 +10,9 @@
   margin: 0;
 }
 
+.text{
+  text-align: center;
+}
 
 html,
 body {
@@ -414,7 +417,6 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 20px;
   perspective: 1000px;
   display: flex;
   gap: 20px; /* Espaçamento entre os cards */
@@ -425,7 +427,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 
 
 .card {
-  height: 10px;
+  border-radius: 50px;
   padding-top: 50px;
   border: 3px solid rgb(255, 255, 255);
   transform-style: preserve-3d;
@@ -434,7 +436,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   background-size: 60px 60px;
   background-position: 0 0, 0 0;
   background-color: #080707;
-  width: 300px;
+  width: 350px;
   height: 300px;
   box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
   transition: all 0.5s ease-in-out;
@@ -447,17 +449,18 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 
 .content-box {
   width: 100%;
-  height: 95%;
+  height: 100%;
   background: rgba(250, 4, 4, 0.732);
   transition: all 0.5s ease-in-out;
   padding: 60px 25px 25px 25px;
   transform-style: preserve-3d;
+  border-radius: 50px;
 }
 
 .content-box .card-title {
-  display: inline-block;
+  align-items: center;
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 900;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 50px);
@@ -468,8 +471,9 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 }
 
 .content-box .card-content {
-  margin-top: 10px;
-  font-size: 12px;
+  border-radius: 50px;
+  margin-top: 30px;
+  font-size: 15px;
   font-weight: 700;
   color: #f2f2f2;
   transition: all 0.5s ease-in-out;
@@ -485,13 +489,14 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   margin-top: 1rem;
   display: inline-block;
   font-weight: 900;
-  font-size: 9px;
+  font-size: 12px;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
   background: white;
   padding: 0.5rem 0.7rem;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);
+  border-radius: 50px;
 }
 
 .content-box .see-more:hover {
@@ -499,8 +504,9 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 }
 
 .date-box {
+  border-radius: 50px;
   position: absolute;
-  top: 30px;
+  top: 25px;
   right: 30px;
   height: 60px;
   width: 60px;
@@ -1249,16 +1255,30 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
     gap: 20px; /* Espaçamento entre os cards */
     margin-bottom: 100px;
   }
+
+  .card{
+    width: 100%;
+  }
+
+  .date-box{
+    top: 0px;
+    right: 20px;
+    height: 60px;
+    width: 60px;
+    
+  }
 }
 
 @media (max-width: 768px) {
   .three-section {
     flex-direction: column;
+    gap: 80px;
   }
 
   .three-section-right,
   .three-section-left {
     width: 100%;
+    height: 50%;
     padding: 20px;
     gap: 20px;
     z-index: -0;

@@ -31,8 +31,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Tempo em milissegundos
-
+    }, 2000); 
     return () => clearTimeout(timer); // Limpeza do timer
   }, []);
 
@@ -81,10 +80,18 @@ export default function Home() {
           <div className="four-section">
 
             <div className="">
+            <div className='six-section'>
+            <h1 className='text'>Nossos serviços</h1>
+            <h3 className='text'> Um novo universo para você</h3>
+    
+          </div>
               <div id="Service" className="parent">
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><CgWebsite style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title"> Web Site</span>
                     <p className="card-content">
                       Sites modernos para destacar sua presença online.
@@ -95,13 +102,14 @@ export default function Home() {
                      </Link>
                     </span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><CgWebsite style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
+               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><CiShoppingCart style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title">Ecommerce</span>
                     <p className="card-content">
                       Lojas online completas para gerenciar seus produtos.
@@ -110,13 +118,14 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><CiShoppingCart style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
+               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><GrNetwork style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title">Marketing</span>
                     <p className="card-content">
                       Estratégias para aumentar sua visibilidade online.
@@ -125,13 +134,14 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><GrNetwork style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
+               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><MdPaid style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title">Tráfego Pago</span>
                     <p className="card-content">
                       Anúncios pagos para atrair mais clientes e leads.
@@ -140,13 +150,14 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><MdPaid style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
+               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><MdInsights style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title">Dashboards</span>
                     <p className="card-content">
                       Dashboards para análise e visualização de dados.
@@ -155,13 +166,14 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><MdInsights style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
+         
                 </div>
 
                 <div className="card">
                   <div className="content-box">
+                  <div className="date-box">
+                    <span className="month"><FaLaptopCode style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
                     <span className="card-title">Softwares</span>
                     <p className="card-content">
                       Software feito sob medida para suas necessidades.
@@ -170,14 +182,14 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><FaLaptopCode style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                    <span className="card-title">Designer</span>
+                  <div className="date-box">
+                    <span className="month"><IoMdPhotos style={{ width: "40px", height: "40px" }} /></span>
+                  </div>
+                    <span className="card-title">Designer </span>
                     <br></br>
                     <p className="card-content">
                       Design criativo para seus projetos visuais.
@@ -186,16 +198,13 @@ export default function Home() {
                        Saber Mais                
                      </Link></span>
                   </div>
-                  <div className="date-box">
-                    <span className="month"><IoMdPhotos style={{ width: "40px", height: "40px" }} /></span>
-                  </div>
                 </div>
               </div>
 
             </div>
           </div>
           <div className='six-section'>
-            <h1>Gostaria de ver nossos projetos?</h1>
+            <h1 className='text' >Gostaria de ver nossos projetos?</h1>
             <Link href="/Projetos" passHref>
               <button className="button-secundary">Projetos</button>
             </Link>
