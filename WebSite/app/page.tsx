@@ -90,7 +90,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><CgWebsite style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><CgWebsite className='Icons' /></span>
                   </div>
                     <span className="card-title"> Web Site</span>
                     <p className="card-content">
@@ -108,7 +108,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><CiShoppingCart style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><CiShoppingCart className='Icons' /></span>
                   </div>
                     <span className="card-title">Ecommerce</span>
                     <p className="card-content">
@@ -124,7 +124,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><GrNetwork style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><GrNetwork className='Icons' /></span>
                   </div>
                     <span className="card-title">Marketing</span>
                     <p className="card-content">
@@ -140,7 +140,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><MdPaid style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><MdPaid className='Icons' /></span>
                   </div>
                     <span className="card-title">Tráfego Pago</span>
                     <p className="card-content">
@@ -156,7 +156,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><MdInsights style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><MdInsights className='Icons' /></span>
                   </div>
                     <span className="card-title">Dashboards</span>
                     <p className="card-content">
@@ -172,7 +172,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><FaLaptopCode style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><FaLaptopCode className='Icons' /></span>
                   </div>
                     <span className="card-title">Softwares</span>
                     <p className="card-content">
@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="card">
                   <div className="content-box">
                   <div className="date-box">
-                    <span className="month"><IoMdPhotos style={{ width: "40px", height: "40px" }} /></span>
+                    <span className="month"><IoMdPhotos className='Icons' /></span>
                   </div>
                     <span className="card-title">Designer </span>
                     <br></br>
