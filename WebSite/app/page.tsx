@@ -123,10 +123,11 @@ export default function Home() {
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
+          
+                    <span className="card-title">Marketing</span>
+                    <div className="date-box">
                     <span className="month"><GrNetwork className='Icons' /></span>
                   </div>
-                    <span className="card-title">Marketing</span>
                     <p className="card-content">
                       Estratégias para aumentar sua visibilidade online.
                     </p>
