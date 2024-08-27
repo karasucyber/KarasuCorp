@@ -1,9 +1,9 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
-import Navbar from '../Componentes/navbar';
-import Loading from '../Componentes/Loading';
-import Footer from '../Componentes/footer';
+import Navbar from '../Componentes/navbar/navbar';
+import Loading from '../Componentes/loading/Loading';
+import Footer from '../Componentes/footer/footer';
 
 
 export default function Home() {
@@ -30,9 +30,7 @@ export default function Home() {
       <div className={loading ? 'hidden' : ''}>
         <Navbar/>
 
-        <Footer/>
-    
-       
+        <Footer/>   
       </div>
     </main>
   );

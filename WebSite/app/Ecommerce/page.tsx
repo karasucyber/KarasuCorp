@@ -1,8 +1,8 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
-import Navbar from '../Componentes/navbar';
-import Loading from '../Componentes/Loading';
+import Navbar from '../Componentes/navbar/navbar';
+import Loading from '../Componentes/loading/Loading';
 
 
 export default function Home() {

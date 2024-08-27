@@ -3,11 +3,11 @@ import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles.css';
-import Mac from './Componentes/mac';
+import Mac from './Componentes/boyspace/boy';
 import Link from 'next/link';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
-import Waves from './Componentes/waves';
+import Waves from './Componentes/space/waves';
 import { CgWebsite } from "react-icons/cg";
 import { CiShoppingCart } from "react-icons/ci";
 import { GrNetwork } from "react-icons/gr";
@@ -15,9 +15,9 @@ import { MdPaid } from "react-icons/md";
 import { MdInsights } from "react-icons/md";
 import { FaLaptopCode } from "react-icons/fa";
 import { IoMdPhotos } from "react-icons/io";
-import Navbar from './Componentes/navbar';
-import Loading from './Componentes/Loading';
-import Footer from './Componentes/footer';
+import Navbar from './Componentes/navbar/navbar';
+import Loading from './Componentes/loading/Loading';
+import Footer from './Componentes/footer/footer';
 
 
 export default function Home() {

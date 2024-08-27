@@ -1,10 +1,10 @@
 'use client'
 import AOS from 'aos';
-import Navbar from '../Componentes/navbar';
-import Waves from "../Componentes/waves";
-import Loading from "../Componentes/Loading";
+import Navbar from '../Componentes/navbar/navbar';
+import Waves from "../Componentes/space/waves";
+import Loading from "../Componentes/loading/Loading";
 import React, { useEffect, useState } from "react";
-import Scroll2 from "../Componentes/App";
+import Scroll2 from "../Componentes/portifolio/App";
 import '../styles.css';
 
 

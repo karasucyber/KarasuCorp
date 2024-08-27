@@ -1,0 +1,200 @@
+
+.primary-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    z-index: 1000;
+    position: fixed; /* Torna o elemento fixo na tela */
+    background: linear-gradient(10deg, #342f2f, #000000); 
+  }
+
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+
+
+  .a-Corp {
+    color: red;
+    font-size: 30px;
+    text-decoration: none;
+    font-stretch: expanded;
+    font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
+  }
+  
+  .Logo1 {
+    font-size: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
+    font-stretch: expanded;
+  }
+
+
+
+  .wrapper {
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    border-radius: var(--border-radius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fab {
+    background: var(--background);
+    width: var(--width);
+    height: var(--height);
+    position: relative;
+    z-index: 3;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fab-animation-reverse 0.4s ease-out forwards;
+  }
+
+  .fab::before {
+    width: 4px;
+    height: 18px;
+  }
+
+  .fab::after {
+    width: 18px;
+    height: 4px;
+  }
+
+  .fac {
+    width: 32px;
+    height: 150px;
+    border-radius: 64px;
+    position: fixed; /* Altere para 'fixed' */
+    background: #fff;
+    z-index: 999; /* Mantém a barra acima de outros elementos */
+    padding: 0.5rem 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    top: 120px; /* Ajuste para mover a barra para baixo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: opacity 0.2s ease-in, bottom 0.2s ease-in, width 0.1s ease-in;
+  }
+
+  .fac a {
+    color: var(--icon-color);
+    opacity: 0.8;
+  }
+
+  .fac a:hover {
+    transition: 0.2s;
+    opacity: 1;
+    color: #344955;
+  }
+
+  input {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    position: absolute;
+    z-index: 5;
+    opacity: 0;
+  }
+
+  input:checked ~ .fab {
+    animation: fab-animation 0.4s ease-out forwards;
+  }
+
+  input:checked ~ .fac {
+    width: 40px;
+    height: 380px;
+    animation: fac-animation 0.4s ease-out forwards 0.1s;
+    bottom: -400px; /* Ajuste para mover a barra para baixo */
+    opacity: 1;
+    z-index: 999;
+  }
+  
+  .icon-wrapper {
+    position: relative;
+  }
+  
+  .tooltip {
+    position: absolute;
+    bottom: 110%; /* Ajuste a posição para que a dica fique acima do ícone */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+    z-index: 10;
+  }
+  
+  .icon-wrapper:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @keyframes fab-animation {
+    0% {
+      transform: rotate(0) scale(1);
+    }
+    20% {
+      transform: rotate(60deg) scale(0.93);
+    }
+    55% {
+      transform: rotate(35deg) scale(1);
+    }
+    80% {
+      transform: rotate(48deg) scale(2);
+    }
+    100% {
+      transform: rotate(45deg) scale(0.95);
+    }
+  }
+
+  @keyframes fab-animation-reverse {
+    0% {
+      transform: rotate(45deg) scale(0.95);
+    }
+    20% {
+      transform: rotate(-15deg);
+    }
+    55% {
+      transform: rotate(10deg);
+    }
+    80% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      transform: rotate(0) scale(1);
+    }
+  }
+
+  @keyframes fac-animation {
+    0% {
+      transform: scale(1, 1);
+    }
+    33% {
+      transform: scale(0.95, 1.05);
+    }
+    66% {
+      transform: scale(1.05, 0.95);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }

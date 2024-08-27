@@ -1,6 +1,6 @@
 'use client'
 import 'aos/dist/aos.css';
-import '../styles.css';
+import './styles.css';
 import { FaHouse } from "react-icons/fa6";
 import { MdOutlineMenuBook } from "react-icons/md";
 import { MdHomeRepairService } from "react-icons/md";
@@ -58,7 +58,6 @@ const Navbar = () => {
               </a>
             </div>
           </div>
-
 
           <div className="logo-section">
             <a className="Logo1" data-aos="fade-left">KARASU</a>
