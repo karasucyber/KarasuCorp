@@ -1,12 +1,11 @@
 'use client'
 import React, { useEffect, useState } from 'react';
-import { GiHamburgerMenu } from "react-icons/gi";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './styles.css';
 import Mac from './Componentes/mac';
 import Link from 'next/link';
-import { FaFileAlt, FaWallet, FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Waves from './Componentes/waves';
 import { CgWebsite } from "react-icons/cg";
@@ -31,19 +30,19 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); 
-    return () => clearTimeout(timer); // Limpeza do timer
+    }, 2000);
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <main className='Main'>
       {loading && (
-        <Loading/>
+        <Loading />
       )}
 
       <div className={loading ? 'hidden' : ''}>
-        <Navbar/>
-    
+        <Navbar />
+
         <div className="secundary-section" data-aos="fade-up" data-aos-delay="0">
           <div className="sectiom-in-sencundary">
             <h1 data-aos="fade-right" data-aos-delay="5">Construindo Legados Digitais</h1>
@@ -80,124 +79,121 @@ export default function Home() {
           <div className="four-section">
 
             <div className="">
-            <div className='six-section'>
-            <h1 className='text'>Nossos serviços</h1>
-            <h3 className='text'> Um novo universo para você</h3>
-    
-          </div>
-              <div id="Service" className="parent">
+              <div className='six-section'>
+                <h1 className='text'>Nossos serviços</h1>
+                <h3 className='text'> Um novo universo para você</h3>
 
+              </div>
+              <div id="Service" className="parent">
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><CgWebsite className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><CgWebsite className='Icons' /></span>
+                    </div>
                     <span className="card-title"> Web Site</span>
                     <p className="card-content">
                       Sites modernos para destacar sua presença online.
                     </p>
                     <span className="see-more">
-                    <Link style={{textDecoration:"none", color:"black"}} href="/WebSite">
-                            Saber Mais  
-                     </Link>
+                      <Link style={{ textDecoration: "none", color: "black" }} href="/WebSite">
+                        Saber Mais
+                      </Link>
                     </span>
                   </div>
-               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><CiShoppingCart className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><CiShoppingCart className='Icons' /></span>
+                    </div>
                     <span className="card-title">Ecommerce</span>
                     <p className="card-content">
                       Lojas online completas para gerenciar seus produtos.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Ecommerce">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Ecommerce">
+                      Saber Mais
+                    </Link></span>
                   </div>
-               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-          
                     <span className="card-title">Marketing</span>
                     <div className="date-box">
-                    <span className="month"><GrNetwork className='Icons' /></span>
-                  </div>
+                      <span className="month"><GrNetwork className='Icons' /></span>
+                    </div>
                     <p className="card-content">
                       Estratégias para aumentar sua visibilidade online.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Marketing">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more">
+                      <Link style={{ textDecoration: "none", color: "black" }} href="/Marketing">
+                        Saber Mais
+                      </Link></span>
                   </div>
-               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><MdPaid className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><MdPaid className='Icons' /></span>
+                    </div>
                     <span className="card-title">Tráfego Pago</span>
                     <p className="card-content">
                       Anúncios pagos para atrair mais clientes e leads.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Tráfego Pago">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more">
+                      <Link style={{ textDecoration: "none", color: "black" }} href="/Tráfego Pago">
+                        Saber Mais
+                      </Link>
+                    </span>
                   </div>
-               
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><MdInsights className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><MdInsights className='Icons' /></span>
+                    </div>
                     <span className="card-title">Dashboards</span>
                     <p className="card-content">
                       Dashboards para análise e visualização de dados.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
+                      Saber Mais
+                    </Link></span>
                   </div>
-         
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><FaLaptopCode className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><FaLaptopCode className='Icons' /></span>
+                    </div>
                     <span className="card-title">Softwares</span>
                     <p className="card-content">
                       Software feito sob medida para suas necessidades.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
+                      Saber Mais
+                    </Link></span>
                   </div>
                 </div>
 
                 <div className="card">
                   <div className="content-box">
-                  <div className="date-box">
-                    <span className="month"><IoMdPhotos className='Icons' /></span>
-                  </div>
+                    <div className="date-box">
+                      <span className="month"><IoMdPhotos className='Icons' /></span>
+                    </div>
                     <span className="card-title">Designer </span>
                     <br></br>
                     <p className="card-content">
                       Design criativo para seus projetos visuais.
                     </p>
-                    <span className="see-more"> <Link style={{textDecoration:"none", color:"black"}} href="/Projetos">
-                       Saber Mais                
-                     </Link></span>
+                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
+                      Saber Mais
+                    </Link>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -224,9 +220,6 @@ export default function Home() {
       </div>
 
       <Footer></Footer>
-
-
-
     </main>
   );
 }
