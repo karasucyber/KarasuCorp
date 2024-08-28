@@ -1,0 +1,138 @@
+/* Container principal */
+.Container-Forms {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  box-sizing: border-box;
+  flex-direction: column;
+  color: white;
+}
+
+/* Contêiner principal da seção */
+.container3 {
+  background-color: #efefef;
+  max-width: 1000px;
+  width: 90%; /* Use porcentagem para responsividade */
+  height: auto; /* Ajusta a altura automaticamente */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+  line-height: 1.5;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
+  margin: 20px auto; /* Margem automática e margem superior/inferior */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-sizing: border-box;
+}
+
+/* Efeito de fundo com gradientes */
+.container3::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, #ff0000, transparent 70%),
+              radial-gradient(circle at 30% 30%, #ff0000, transparent 50%),
+              radial-gradient(circle at 70% 70%, #ff0000, transparent 40%);
+  z-index: -1;
+  border-radius: 10px; /* Bordas arredondadas no fundo */
+}
+
+/* Estilos da imagem */
+.container3 img {
+  max-width: 100%; /* Adapta a imagem ao contêiner */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilos do texto dentro do contêiner */
+.container3-text {
+  color: #000000;
+  text-align: center; /* Centraliza o texto */
+}
+
+.container3-text h2 {
+  font-size: 1.5rem; /* Tamanho de fonte ajustado */
+  color: #1A2250;
+}
+
+.container3-text p {
+  font-size: 0.875rem; /* Ajusta o tamanho da fonte */
+  color: #3B4169;
+  margin: 10px 0;
+}
+
+.container3-text textarea {
+  width: 100%; /* Adapta ao tamanho do contêiner */
+  max-width: 350px; /* Define um limite máximo */
+  height: 60px;
+  border: 2px solid #DADDEC;
+  padding: 14px;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #656880;
+  margin: 5px 0 10px;
+}
+
+.container3-text button {
+  width: 100%; /* Adapta ao tamanho do contêiner */
+  max-width: 300px; /* Define um limite máximo */
+  padding: 14px;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #000000, #ff0000);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #89caff94;
+  transition: box-shadow 0.3s ease-in-out;
+  margin: 10px 0; /* Espaçamento vertical */
+}
+
+.container3-text button:hover {
+  box-shadow: none;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .container3 {
+      width: 90%; /* Ajusta a largura */
+      padding: 10px; /* Ajusta o espaçamento interno */
+  }
+  
+  .container3-text h2 {
+      font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  }
+
+  .container3-text textarea,
+  .container3-text button {
+      width: 100%; /* Ajusta a largura */
+  }
+
+  .container3 img {
+      display: none; /* Oculta a imagem em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .container3 {
+      width: 100%; /* Ajusta a largura para telas menores */
+      padding: 5px; /* Ajusta o espaçamento interno */
+  }
+  
+  .container3-text h2 {
+      font-size: 1rem; /* Ajusta o tamanho da fonte */
+  }
+  
+  .container3-text p {
+      font-size: 0.75rem; /* Ajusta o tamanho da fonte */
+  }
+  
+  .container3 img {
+      display: none; /* Oculta a imagem em telas menores */
+  }
+}

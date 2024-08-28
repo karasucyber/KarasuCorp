@@ -4,7 +4,9 @@ import AOS from 'aos';
 import Navbar from '../Componentes/navbar/navbar';
 import Loading from '../Componentes/loading/Loading';
 import Footer from '../Componentes/footer/footer';
-
+import Forms from '../Componentes/forms/forms';
+import "../styles.css"
+import Waves from '../Componentes/space/waves';
 
 export default function Home() {
   useEffect(() => {
@@ -28,9 +30,16 @@ export default function Home() {
       )}
 
       <div className={loading ? 'hidden' : ''}>
+      
         <Navbar/>
+        <Forms></Forms>
 
         <Footer/>   
+
+    
+          <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
+            <Waves />
+          </div>
       </div>
     </main>
   );

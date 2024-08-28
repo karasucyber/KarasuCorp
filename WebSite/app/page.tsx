@@ -18,6 +18,7 @@ import { IoMdPhotos } from "react-icons/io";
 import Navbar from './Componentes/navbar/navbar';
 import Loading from './Componentes/loading/Loading';
 import Footer from './Componentes/footer/footer';
+import Forms from './Componentes/forms/forms';
 
 
 export default function Home() {
@@ -36,9 +37,7 @@ export default function Home() {
 
   return (
     <main className='Main'>
-      {loading && (
-        <Loading />
-      )}
+   
 
       <div className={loading ? 'hidden' : ''}>
         <Navbar />
@@ -198,6 +197,7 @@ export default function Home() {
                 </div>
               </div>
 
+
             </div>
           </div>
           <div className='six-section'>
@@ -206,6 +206,10 @@ export default function Home() {
               <button className="button-secundary">Projetos</button>
             </Link>
           </div>
+
+          <Forms/>
+
+
         </div>
         <a href="https://www.instagram.com/karasu_corp" target="_blank" rel="noopener noreferrer">
           <div className={`Insta-Box ${loading ? 'hidden' : ''}`}>
