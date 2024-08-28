@@ -37,7 +37,9 @@ export default function Home() {
 
   return (
     <main className='Main'>
-   
+      {loading && (
+        <Loading/>
+      )}
 
       <div className={loading ? 'hidden' : ''}>
         <Navbar />

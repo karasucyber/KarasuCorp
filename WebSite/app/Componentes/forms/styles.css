@@ -12,7 +12,7 @@
 .container3 {
   background-color: #efefef;
   max-width: 1000px;
-  width: 90%; /* Use porcentagem para responsividade */
+  width: 100%; /* Use porcentagem para responsividade */
   height: auto; /* Ajusta a altura automaticamente */
   position: relative;
   display: flex;
@@ -43,7 +43,7 @@
 
 /* Estilos da imagem */
 .container3 img {
-  max-width: 100%; /* Adapta a imagem ao contêiner */
+  max-width: 180%; /* Adapta a imagem ao contêiner */
   height: auto;
   object-fit: cover;
   border-radius: 10px; /* Bordas arredondadas */
