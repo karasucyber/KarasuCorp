@@ -56,7 +56,6 @@ body {
   font-size: 35px;
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
   z-index: -1;
-  margin-bottom: 50px;
 
 }
 
@@ -71,7 +70,6 @@ body {
 }
 
 .sectiom-in-sencundary>* {
-  margin-bottom: 50px;
 }
 
 .button-secundary {
@@ -188,7 +186,6 @@ body {
   padding: 2rem;
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
   font-stretch: expanded;  color: var(--color);
-  margin-bottom: 50px;
   
 }
   
@@ -279,8 +276,6 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   padding: 0;
   overflow: hidden; /* Oculta as barras de rolagem */
   overscroll-behavior: none;
-  margin-bottom: 50px;
-
 } 
 
 .six-section{
@@ -291,7 +286,6 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   color: #ff0000;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Sombra branca no texto */
   animation: typing 2s steps(40, end), blink 0.75s step-end infinite;
-  margin-bottom: 60px;
 }
 
 
@@ -515,7 +509,6 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   .parent {
     flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
     gap: 20px; /* Espaçamento entre os cards */
-    margin-bottom: 100px;
   }
 
   .Icons{
