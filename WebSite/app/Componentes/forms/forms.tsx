@@ -30,8 +30,11 @@ const Forms: React.FC = () => {
 
   return (
     <div className="Container-Forms">
-      <h1 className="text">Vamos elevar seu patamar?</h1>
-      <h3 className="text">Uma pequena mensagem pode mudar seu negócio</h3>
+      <div className="six-section">
+      <h1 className="">Vamos elevar seu patamar?</h1>
+      <h3 className="">Uma pequena mensagem pode mudar seu negócio</h3>
+      </div>
+    
       <div className="container3">
         <img src="Karasu .png" alt="Karasu Logo" className="container3-img" />
         <form

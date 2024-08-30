@@ -55,9 +55,13 @@ export default function Home() {
             <button className="button-secundary" data-aos="fade-right">Construa</button>
           </div>
         </div>
+
+          <div className='six-section'>
+          <h1>Quem somos ?</h1>
+          </div>
+
         <div className="three-section">
           <div className="three-section-right">
-            <h1>Quem somos ?</h1>
             <div className="Container-Mac">
               <Mac />
             </div>
@@ -77,14 +81,14 @@ export default function Home() {
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
             <Waves />
           </div>
+
+          <div className='six-section'>
+           <h1 className=''>Nossos serviços</h1>
+           <h3 className=''> Um novo universo para você</h3>          
+          </div>
+
           <div className="four-section">
-
             <div className="">
-              <div className='six-section'>
-                <h1 className='text'>Nossos serviços</h1>
-                <h3 className='text'> Um novo universo para você</h3>
-
-              </div>
               <div id="Service" className="parent">
                 <div className="card">
                   <div className="content-box">
@@ -198,12 +202,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
+
           <div className='six-section'>
-            <h1 className='text' >Gostaria de ver nossos projetos?</h1>
+            <h1 className='text'>Gostaria de ver nossos projetos?</h1>
             <Link href="/Projetos" passHref>
               <button className="button-secundary">Projetos</button>
             </Link>
