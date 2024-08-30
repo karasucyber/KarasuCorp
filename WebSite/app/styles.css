@@ -179,7 +179,6 @@ body {
   display: grid;
   align-content: center;
   gap: 3rem;
-  padding: 2rem;
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
   font-stretch: expanded;  color: var(--color);
 }
