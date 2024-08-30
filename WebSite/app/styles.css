@@ -281,6 +281,14 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
   color: rgb(255, 0, 0);
   margin: 90px 0; /* Adiciona um espaço de 20px em cima e embaixo */
+  font-size: 20px;
+  text-align: center;
+}
+
+.six{
+  font-size: 20px;
+  text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 
@@ -549,6 +557,17 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
     font-size: 14px;
 
   }
+
+  .six-section {
+    margin: 90px 0; /* Adiciona um espaço de 20px em cima e embaixo */
+    font-size: 16px;
+  }
+
+
+.six{
+  font-size: 16px;
+
+}
 }
 
 @media (max-width: 480px) {

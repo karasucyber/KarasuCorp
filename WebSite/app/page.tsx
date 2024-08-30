@@ -84,7 +84,7 @@ export default function Home() {
 
           <div className='six-section'>
            <h1 className=''>Nossos serviços</h1>
-           <h3 className=''> Um novo universo para você</h3>          
+           <h3 className='six'> Um novo universo para você</h3>          
           </div>
 
           <div className="four-section">

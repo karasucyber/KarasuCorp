@@ -32,7 +32,7 @@ const Forms: React.FC = () => {
     <div className="Container-Forms">
       <div className="six-section">
       <h1 className="">Vamos elevar seu patamar?</h1>
-      <h3 className="">Uma pequena mensagem pode mudar seu negócio</h3>
+      <h3 className="six">Uma pequena mensagem pode mudar seu negócio</h3>
       </div>
     
       <div className="container3">
