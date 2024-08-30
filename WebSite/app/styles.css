@@ -512,6 +512,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   .parent {
     flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
     gap: 20px; /* Espaçamento entre os cards */
+    align-items: center;
   }
 
   .Icons{
@@ -530,7 +531,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   .card {
     border-radius: 50px;
     padding-top: 15px;
-    width: 100%;
+    width: 70%;
 
   }
   
