@@ -15,7 +15,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
     return(<>
            <div className="primary-section" data-aos="fade-up">
-          <div className="wrapper">
+            <div className="wrapper">
             <input type="checkbox" />
             <div className="fab"><RxHamburgerMenu/></div>
             <div className="fac">

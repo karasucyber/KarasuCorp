@@ -10,6 +10,7 @@
     z-index: 1000;
     position: fixed; /* Torna o elemento fixo na tela */
     background: linear-gradient(10deg, #342f2f, #000000); 
+  
   }
 
 
@@ -198,3 +199,21 @@
       transform: scale(1, 1);
     }
   }
+
+
+
+  @media (max-width: 768px) {
+
+    .a-Corp {
+      font-size: 22px;
+    }
+    
+    .Logo1 {
+      font-size: 22px;
+    }
+}
+
+/* Para telas menores que 480px */
+@media (max-width: 480px) {
+
+}

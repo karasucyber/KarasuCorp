@@ -1,138 +1,210 @@
-/* Container principal */
-.Container-Forms {
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
-  box-sizing: border-box;
-  flex-direction: column;
-  color: white;
+/* ================================
+   Variáveis CSS para Consistência
+=================================== */
+:root {
+  --primary-color: #1A2250;
+  --secondary-color: #3B4169;
+  --accent-color: #ff0000;
+  --background-color: #efefef;
+  --text-color: #000000;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --font-family: 'Lastica', 'Helvetica', 'Arial', sans-serif;
+  --font-size-base: 1rem;
+  --font-size-large: 1.5rem;
+  --font-size-small: 0.875rem;
+  --border-radius: 10px;
+  --box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+  --transition-duration: 0.3s;
 }
 
-/* Contêiner principal da seção */
+
+.text{
+  text-align: center;
+  color: #ff0000;
+  text-shadow: 2px 2px 4px rgba(86, 86, 86, 0.7); /* Sombra branca no texto */                 }
+
+/* ================================
+   Estilos Globais
+=================================== */
+
+
+/* ================================
+   Container Principal do Formulário
+=================================== */
+.Container-Forms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* ================================
+   Seção do Formulário
+=================================== */
 .container3 {
-  background-color: #efefef;
-  max-width: 1000px;
-  width: 100%; /* Use porcentagem para responsividade */
-  height: auto; /* Ajusta a altura automaticamente */
-  position: relative;
+  background-color: var(--white-color);
+  width: 100%;
+  max-width: 800px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o conteúdo */
-  line-height: 1.5;
-  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.185);
-  margin: 20px auto; /* Margem automática e margem superior/inferior */
-  border-radius: 10px; /* Bordas arredondadas */
-  padding: 20px; /* Espaçamento interno */
-  box-sizing: border-box;
+  padding: 40px;
+  margin: 20px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  position: relative;
+  overflow: hidden;
 }
 
-/* Efeito de fundo com gradientes */
+/* Efeito de Fundo com Gradientes */
 .container3::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(circle at 50% 50%, #ff0000, transparent 70%),
-              radial-gradient(circle at 30% 30%, #ff0000, transparent 50%),
-              radial-gradient(circle at 70% 70%, #ff0000, transparent 40%);
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, var(--accent-color), transparent 70%);
+  transform: rotate(45deg);
+  opacity: 0.05;
   z-index: -1;
-  border-radius: 10px; /* Bordas arredondadas no fundo */
 }
 
-/* Estilos da imagem */
+/* ================================
+   Estilos da Imagem
+=================================== */
 .container3 img {
-  max-width: 180%; /* Adapta a imagem ao contêiner */
+  max-width: 60%;
   height: auto;
-  object-fit: cover;
-  border-radius: 10px; /* Bordas arredondadas */
+  border-radius: var(--border-radius);
+  margin-right: 20px;
 }
 
-/* Estilos do texto dentro do contêiner */
-.container3-text {
-  color: #000000;
-  text-align: center; /* Centraliza o texto */
+/* ================================
+   Títulos e Textos
+=================================== */
+.container3 h2 {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
-.container3-text h2 {
-  font-size: 1.5rem; /* Tamanho de fonte ajustado */
-  color: #1A2250;
+.container3 p {
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  margin-bottom: 30px;
 }
 
-.container3-text p {
-  font-size: 0.875rem; /* Ajusta o tamanho da fonte */
-  color: #3B4169;
-  margin: 10px 0;
-}
+/* ================================
+   Inputs e Textareas
+=================================== */
 
-.container3-text textarea {
-  width: 100%; /* Adapta ao tamanho do contêiner */
-  max-width: 350px; /* Define um limite máximo */
+
+
+.container3 input,
+.container3 textarea,
+.container3 select {
+  width: 100%;
   height: 60px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
   border: 2px solid #DADDEC;
-  padding: 14px;
   border-radius: 5px;
-  font-size: 1rem;
-  color: #656880;
-  margin: 5px 0 10px;
+  font-size: var(--font-size-base);
+  color: var(--text-color);
+  background-color: var(--white-color);
+  transition: border-color var(--transition-duration);
+  box-sizing: border-box;
 }
 
-.container3-text button {
-  width: 100%; /* Adapta ao tamanho do contêiner */
-  max-width: 300px; /* Define um limite máximo */
+.container3 input:focus,
+.container3 textarea:focus,
+.container3 select:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+/* ================================
+   Select e Options
+=================================== */
+.container3 select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="8"><path fill="%23333" d="M7 8L0 0h14z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 12px;
+}
+
+.container3 option {
+  padding: 10px;
+  font-size: var(--font-size-base);
+}
+
+/* ================================
+   Botão de Envio
+=================================== */
+.container3 button {
+  width: 100%;
   padding: 14px;
   border: none;
   border-radius: 5px;
-  background-image: linear-gradient(to right, #000000, #ff0000);
-  color: #fff;
-  font-size: 1rem;
+  background: linear-gradient(to right, var(--black-color), var(--accent-color));
+  color: var(--white-color);
+  font-size: var(--font-size-base);
+  font-weight: bold;
   cursor: pointer;
-  box-shadow: 0 5px 20px #89caff94;
-  transition: box-shadow 0.3s ease-in-out;
-  margin: 10px 0; /* Espaçamento vertical */
+  transition: background var(--transition-duration), transform var(--transition-duration);
 }
 
-.container3-text button:hover {
-  box-shadow: none;
+.container3 button:hover {
+  background: linear-gradient(to right, var(--accent-color), var(--black-color));
+  transform: translateY(-2px);
 }
 
-/* Media Queries para responsividade */
+/* ================================
+   Media Queries para Responsividade
+=================================== */
 @media (max-width: 768px) {
   .container3 {
-      width: 90%; /* Ajusta a largura */
-      padding: 10px; /* Ajusta o espaçamento interno */
-  }
-  
-  .container3-text h2 {
-      font-size: 1.2rem; /* Ajusta o tamanho da fonte */
-  }
-
-  .container3-text textarea,
-  .container3-text button {
-      width: 100%; /* Ajusta a largura */
+    flex-direction: column;
+    padding: 30px;
+    margin: 15px;
   }
 
   .container3 img {
-      display: none; /* Oculta a imagem em telas menores */
+    max-width: 70%; /* Mantém a imagem menor em telas menores */
+    margin-bottom: 20px;
+    margin-right: 0;
+  }
+
+  .container3 h2 {
+    font-size: 1.25rem;
+  }
+
+  .container3 p {
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 480px) {
   .container3 {
-      width: 100%; /* Ajusta a largura para telas menores */
-      padding: 5px; /* Ajusta o espaçamento interno */
+    padding: 20px;
+    margin: 10px;
   }
-  
-  .container3-text h2 {
-      font-size: 1rem; /* Ajusta o tamanho da fonte */
-  }
-  
-  .container3-text p {
-      font-size: 0.75rem; /* Ajusta o tamanho da fonte */
-  }
-  
+
   .container3 img {
-      display: none; /* Oculta a imagem em telas menores */
+    max-width: 60%; /* Ajusta a imagem para um tamanho menor */
+  }
+
+  .container3 h2 {
+    font-size: 1rem;
+  }
+
+  .container3 p {
+    font-size: 0.75rem;
   }
 }

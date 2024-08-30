@@ -30,13 +30,11 @@ export default function Home() {
       )}
 
       <div className={loading ? 'hidden' : ''}>
-      
         <Navbar/>
-        <Forms></Forms>
+
+        <Forms/>
 
         <Footer/>   
-
-    
           <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
             <Waves />
           </div>
