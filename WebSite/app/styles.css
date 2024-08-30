@@ -283,6 +283,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   margin: 90px 0; /* Adiciona um espaço de 20px em cima e embaixo */
   font-size: 20px;
   text-align: center;
+  gap: 20px;
 }
 
 .six{
