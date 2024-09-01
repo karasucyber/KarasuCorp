@@ -25,16 +25,6 @@ const Navbar = () => {
                 <span className="tooltip">Home</span>
               </a>
 
-              <a href="/History" className="icon-wrapper">
-                <MdOutlineMenuBook />
-                <span className="tooltip">História</span>
-              </a>
-
-              <a href="/" className="icon-wrapper">
-                <MdHomeRepairService />
-                <span className="tooltip">Serviços</span>
-              </a>
-
               <a href="/Contact" className="icon-wrapper">
                 <FaPhoneAlt />
                 <span className="tooltip">Contatos</span>
@@ -46,16 +36,7 @@ const Navbar = () => {
               </a>
 
 
-              <a href="/ProjetoSocial" className="icon-wrapper">
-                <TfiHeadphoneAlt />
-                <span className="tooltip">Projeto Social</span>
-              </a>
-              
-
-              <a href="/Sac" className="icon-wrapper">
-                <TfiHeadphoneAlt />
-                <span className="tooltip">Sac</span>
-              </a>
+           
             </div>
           </div>
 
@@ -74,4 +55,26 @@ const Navbar = () => {
 export default Navbar;
 
 
-/*  */
+/*   <a href="/ProjetoSocial" className="icon-wrapper">
+                <TfiHeadphoneAlt />
+                <span className="tooltip">Projeto Social</span>
+              </a>
+              
+
+              <a href="/Sac" className="icon-wrapper">
+                <TfiHeadphoneAlt />
+                <span className="tooltip">Sac</span>
+              </a>  
+              
+                            <a href="/History" className="icon-wrapper">
+                <MdOutlineMenuBook />
+                <span className="tooltip">História</span>
+              </a>
+
+              <a href="/" className="icon-wrapper">
+                <MdHomeRepairService />
+                <span className="tooltip">Serviços</span>
+              </a>
+              
+              
+              */

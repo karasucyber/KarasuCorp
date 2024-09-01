@@ -500,104 +500,121 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   height: 40px;
 }
 
-  @media (max-width: 768px) {
-    .footer__columns  {
-      flex-direction: column; 
-      gap: 100px; 
-      align-items: center;
-      
-    }
-  }
-
-  /* Media Query para telas menores */
-@media (max-width: 768px) {
-  .parent {
-    flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
-    gap: 20px; /* Espaçamento entre os cards */
+@media (max-width: 1024px) {
+  .footer__columns, .parent, .three-section {
+    flex-direction: column;
+    gap: 40px; /* Espaçamento maior para telas de tamanho intermediário */
     align-items: center;
-    padding: 0px;
+    padding: 10px;
   }
 
-  .Icons{
+  .Icons {
+    width: 40px;
+    height: 40px;
+  }
+
+  .date-box {
+    top: 15px;
+    right: 25px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .card {
+    border-radius: 30px;
+    padding-top: 20px;
+    width: 60%;
+  }
+  
+  .content-box {
+    width: 100%;
+    height: 90%;
+  }
+
+  .three-section-right, .three-section-left {
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+    font-size: 16px;
+  }
+
+  .six-section, .six, .secundary-section {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .content-box .card-title {
+    font-size: 24px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+  }
+}
+
+/* Ajustes gerais para telas menores que 768px */
+@media (max-width: 768px) {
+  .footer__columns, .parent, .three-section {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0;
+  }
+
+  .Icons {
     width: 30px;
     height: 30px;
   }
 
-  .date-box{
+  .date-box {
     top: 10px;
     right: 20px;
     height: 50px;
     width: 50px;
-    
   }
-    
+
   .card {
     border-radius: 50px;
     padding-top: 15px;
     width: 70%;
-
   }
   
   .content-box {
     width: 100%;
     height: 95%;
   }
-  
-}
 
-@media (max-width: 768px) {
-  .three-section {
-    flex-direction: column;
-    gap: 80px;
-  }
-
-  .three-section-right,
-  .three-section-left {
+  .three-section-right, .three-section-left {
     width: 100%;
-    height: 400px ;
+    height: 400px;
     padding: 20px;
-    z-index: -0;
     font-size: 14px;
-
   }
 
-  .six-section {
-    margin: 90px 0; /* Adiciona um espaço de 20px em cima e embaixo */
+  .six-section, .six, .secundary-section {
     font-size: 16px;
-  }
-
-
-.six{
-  font-size: 16px;
-
-}
-}
-
-@media (max-width: 480px) {
-  .three-section-right,
-  .three-section-left {
-    padding: 10px;
-    font-size: 14px;
-  }
-}
-
-@media (max-width : 768px) {
-
-
-
-  .secundary-section{
-    font-size: 17px;
     text-align: center;
-    
   }
 
   .content-box .card-title {
-    display: flex;
-    color: white;
     font-size: 22px;
     font-weight: 900;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 50px);
   }
-  
+}
+
+/* Ajustes específicos para telas menores que 480px */
+@media (max-width: 480px) {
+  .three-section-right, .three-section-left {
+    padding: 10px;
+    font-size: 14px; /* Ajuste fino para fontes em telas bem pequenas */
+  }
+
+  .content-box .card-title {
+    font-size: 18px; /* Redução adicional para telas muito pequenas */
+  }
+
+  .six-section, .six, .secundary-section {
+    font-size: 14px; /* Menor fonte para telas pequenas */
+  }
 }

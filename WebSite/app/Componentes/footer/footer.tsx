@@ -95,25 +95,29 @@ const Footer = () => {
             </div>
             <div className="footer__col">
               <h3 className="footer__col-title">
-                <i data-feather="share-2"></i> <span>Redes Sociais</span>
+                <i data-feather="share-2"></i> <span>Redes</span>
               </h3>
               <nav className="footer__nav">
                 <ul className="footer__nav-divst">
+
                   <li className="footer__nav-item">
                     <a href="https://www.youtube.com/@KarasuCorp" className="footer__nav-divnk">
                       <i data-feather="youtube"></i> Youtube
                     </a>
                   </li>
+
                   <li className="footer__nav-item">
                     <a href="https://www.linkedin.com/company/karasucorp/" className="footer__nav-divnk">
                       <i data-feather="facebook"></i> Linkedin
                     </a>
                   </li>
+
                   <li className="footer__nav-item">
                     <a href="https://www.instagram.com/karasu_corp/" className="footer__nav-divnk">
                       <i data-feather="instagram"></i> Instagram
                     </a>
                   </li>
+                  
                 </ul>
               </nav>
             </div>
