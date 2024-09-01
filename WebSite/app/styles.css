@@ -178,7 +178,6 @@ body {
   min-height: 100vh;
   display: grid;
   align-content: center;
-  gap: 3rem;
   font-family: Lastica, "Regular", Bold, Helvetica, sans-serif;
   font-stretch: expanded;  color: var(--color);
 }
@@ -374,6 +373,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   gap: 20px; /* Espaçamento entre os cards */
   overflow-x: auto; /* Adiciona rolagem horizontal se necessário */
   flex-wrap: wrap; /* Permite que os itens sejam movidos para a linha seguinte se não houver espaço suficiente */
+  padding: 3rem;
 }
 
 .card {
@@ -388,6 +388,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
   background-color: #080707;
   width: 350px;
   height: 300px;
+  
   box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
   transition: all 0.5s ease-in-out;
 }
@@ -513,6 +514,7 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
     flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
     gap: 20px; /* Espaçamento entre os cards */
     align-items: center;
+    padding: 0px;
   }
 
   .Icons{

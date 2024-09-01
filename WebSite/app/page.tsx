@@ -38,7 +38,7 @@ export default function Home() {
   return (
     <main className='Main'>
       {loading && (
-        <Loading/>
+        <Loading />
       )}
 
       <div className={loading ? 'hidden' : ''}>
@@ -52,13 +52,23 @@ export default function Home() {
               <h6 data-aos="fade-right" data-aos-delay="5">e</h6>
               <h6 data-aos="fade-right" data-aos-delay="5">futuro digital</h6>
             </div>
-            <button className="button-secundary" data-aos="fade-right">Construa</button>
+            <button className="button-secundary" data-aos="fade-right">
+              <Link
+                style={{ textDecoration: "none", color: "red" }}
+                href="https://wa.me/5511919216813?text=Olá,%20quero%20criar%20uma%20nova%20ponte%20para%20o%20futuro.%20Poderia%20me%20dar%20mais%20informações%20sobre%20como%20podemos%20fazer%20isso?"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Construa
+              </Link>
+
+            </button>
           </div>
         </div>
 
-          <div className='six-section'>
+        <div className='six-section'>
           <h1>Quem somos ?</h1>
-          </div>
+        </div>
 
         <div className="three-section">
           <div className="three-section-right">
@@ -83,8 +93,8 @@ export default function Home() {
           </div>
 
           <div className='six-section'>
-           <h1 className=''>Nossos serviços</h1>
-           <h3 className='six'> Um novo universo para você</h3>          
+            <h1 className=''>Nossos serviços</h1>
+            <h3 className='six'> Um novo universo para você</h3>
           </div>
 
           <div className="four-section">
@@ -100,8 +110,13 @@ export default function Home() {
                       Sites modernos para destacar sua presença online.
                     </p>
                     <span className="see-more">
-                      <Link style={{ textDecoration: "none", color: "black" }} href="/WebSite">
-                        Saber Mais
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20tenho%20interesse%20em%20saber%20mais%20sobre%20o%20desenvolvimento%20de%20websites.%20Poderia%20me%20dar%20mais%20informações?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
                       </Link>
                     </span>
                   </div>
@@ -112,13 +127,20 @@ export default function Home() {
                     <div className="date-box">
                       <span className="month"><CiShoppingCart className='Icons' /></span>
                     </div>
-                    <span className="card-title">Ecommerce</span>
+                    <span className="card-title">Loja online</span>
                     <p className="card-content">
                       Lojas online completas para gerenciar seus produtos.
                     </p>
-                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Ecommerce">
-                      Saber Mais
-                    </Link></span>
+                    <span className="see-more">
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20suas%20soluções%20de%20Ecommerce.%20Pode%20me%20ajudar?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
+                      </Link>
+                    </span>
                   </div>
                 </div>
 
@@ -132,9 +154,15 @@ export default function Home() {
                       Estratégias para aumentar sua visibilidade online.
                     </p>
                     <span className="see-more">
-                      <Link style={{ textDecoration: "none", color: "black" }} href="/Marketing">
-                        Saber Mais
-                      </Link></span>
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20gostaria%20de%20entender%20como%20suas%20estratégias%20de%20Marketing%20podem%20ajudar%20meu%20negócio.%20Poderia%20me%20dar%20mais%20detalhes?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
+                      </Link>
+                    </span>
                   </div>
                 </div>
 
@@ -148,8 +176,13 @@ export default function Home() {
                       Anúncios pagos para atrair mais clientes e leads.
                     </p>
                     <span className="see-more">
-                      <Link style={{ textDecoration: "none", color: "black" }} href="/Tráfego Pago">
-                        Saber Mais
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20tenho%20interesse%20em%20saber%20mais%20sobre%20as%20suas%20estratégias%20de%20Tráfego%20Pago.%20Pode%20me%20dar%20mais%20informações?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
                       </Link>
                     </span>
                   </div>
@@ -164,9 +197,17 @@ export default function Home() {
                     <p className="card-content">
                       Dashboards para análise e visualização de dados.
                     </p>
-                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
-                      Saber Mais
-                    </Link></span>
+                    <span className="see-more">
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20como%20vocês%20podem%20me%20ajudar%20com%20Dashboards%20personalizados.%20Poderia%20me%20dar%20mais%20detalhes?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
+                      </Link>
+                    </span>
+
                   </div>
                 </div>
 
@@ -179,9 +220,16 @@ export default function Home() {
                     <p className="card-content">
                       Software feito sob medida para suas necessidades.
                     </p>
-                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
-                      Saber Mais
-                    </Link></span>
+                    <span className="see-more">
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20estou%20interessado%20em%20conhecer%20mais%20sobre%20o%20desenvolvimento%20de%20Softwares%20sob%20medida.%20Poderia%20me%20dar%20mais%20informações?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
+                      </Link>
+                    </span>
                   </div>
                 </div>
 
@@ -195,9 +243,15 @@ export default function Home() {
                     <p className="card-content">
                       Design criativo para seus projetos visuais.
                     </p>
-                    <span className="see-more"> <Link style={{ textDecoration: "none", color: "black" }} href="/Projetos">
-                      Saber Mais
-                    </Link>
+                    <span className="see-more">
+                      <Link
+                        style={{ textDecoration: "none", color: "black" }}
+                        href="https://wa.me/5511919216813?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20Design.%20Poderia%20me%20dar%20mais%20informações?"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        saber mais
+                      </Link>
                     </span>
                   </div>
                 </div>
@@ -212,7 +266,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <Forms/>
+          <Forms />
 
 
         </div>
@@ -221,11 +275,16 @@ export default function Home() {
             <FaInstagram style={{ width: "80%", height: "100%" }} />
           </div>
         </a>
-        <a href="https://wa.me/011919216813" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://wa.me/5511919216813?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços!"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className={`Whats-Box ${loading ? 'hidden' : ''}`}>
             <FaWhatsapp style={{ width: "100%", height: "100%" }} />
           </div>
         </a>
+
       </div>
 
       <Footer></Footer>
