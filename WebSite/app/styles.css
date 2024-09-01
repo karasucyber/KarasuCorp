@@ -129,8 +129,9 @@ body {
 
 
 .three-section-left {
-  color: white;
+  color: rgb(255, 255, 255);
   font-size: 25px;
+  font-weight: 900;
   align-items: center;
   animation: typing 2s steps(40, end), blink 0.75s step-end infinite;
 
@@ -581,6 +582,9 @@ ol li .descr { font-size: 0.8rem; font-weight: 300 }
 }
 
 @media (max-width : 768px) {
+
+
+
   .secundary-section{
     font-size: 17px;
     text-align: center;
