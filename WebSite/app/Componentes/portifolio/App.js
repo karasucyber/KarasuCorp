@@ -6,13 +6,12 @@ import { Image, ScrollControls, Scroll, useScroll } from '@react-three/drei'
 import { proxy, useSnapshot } from 'valtio'
 import { easing } from 'maath'
 
-
-
 const material = new THREE.LineBasicMaterial({ color: 'white' })
 const geometry = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, -0.5, 0), new THREE.Vector3(0, 0.5, 0)])
 const state = proxy({
   clicked: null,
-  urls: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 1, 5, 7, 8, 2, 4, 9, 6].map((u) => `/${u}.jpg`)
+  urls: [1,2,3,4,5,6 ].map((u) => `/${u}.gif`)
+
 })
 
 function Minimap() {
@@ -22,10 +21,6 @@ function Minimap() {
   const { height } = useThree((state) => state.viewport)
   useFrame((state, delta) => {
     ref.current.children.forEach((child, index) => {
-      // Give me a value between 0 and 1
-      //   starting at the position of my item
-      //   ranging across 4 / total length
-      //   make it a sine, so the value goes from 0 to 1 to 0.
       const y = scroll.curve(index / urls.length - 1.5 / urls.length, 4 / urls.length)
       easing.damp(child.scale, 'y', 0.15 + y / 6, 0.15, delta)
     })
@@ -50,7 +45,7 @@ function Item({ index, position, scale, c = new THREE.Color(), ...props }) {
 
   const [hovered, hover] = useState(false)
 
-  const click = () => (state.clicked = index === clicked ? null : index)
+  const click = () => (state.clicked = index)
 
   const over = () => hover(true)
 
@@ -99,11 +94,33 @@ function Items({ w = 0.7, gap = 0.15 }) {
   )
 }
 
+function Overlay() {
+  const { clicked, urls } = useSnapshot(state)
+  if (clicked === null) return null
+  return (
+    <div style={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      zIndex: 10,
+    }} onClick={() => (state.clicked = null)}>
+      <img src={urls[clicked]} alt="Expanded View" style={{ maxWidth: '90%', maxHeight: '90%' }} />
+    </div>
+  )
+}
+
 export const Scroll2 = () => (
 <> 
 <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} onPointerMissed={() => (state.clicked = null)}>
    <Items />
 </Canvas>
+<Overlay />
 </>
 )
 
